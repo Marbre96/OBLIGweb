@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oppgave 6</title>
+    <script language="javascript">
+		window.onload = oppstart; 	
+		
+		
+	       function start(){
+               var tekst = document.getElementById("tekst").value ;
+               var antall = document.getElementById("tall").value ;
+		
+               var utskrift_antall = document.getElementById("tass") ;
+
+               var gange = tekst * parseInt(tall) ;		
+               for(var utskrift = 1 ; utskrift <= antall ; utskrift++ ){
+                   utskrift_antall.innerHTML += tekst + "<br />" ;
+               }              
+		
+           }
+    </script>
+</head>
+
+<body>
+    <span>Skriv setning klikk for antall ganger</span>
+
+    <input type = "text" id = "tekst"/>
+    <input type = "text" id = "tall"/>
+    <button onclick = "start()">Skriv Linjer</button>
+    <div id = "tass"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype HTML>
+<head>
+	<title>oppgave7d</title>
+	<meta charset="utf-8" />
+	<script>
+	
+		window.onload = oppstart;
+		
+		function oppstart() {
+			
+			var a = 0;
+            
+			while (a <= 100) {
+				
+				if(a !== 0) {
+					document.getElementById("utskrift").innerHTML += ", ";
+				}
+				document.getElementById("utskrift").innerHTML += a;
+				a+=3;
+			}	
+		}
+	
+	</script>
+
+
+</head>
+<body>
+	<p id="utskrift"></p>
+</body>

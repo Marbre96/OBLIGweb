@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>oppgave 1</title>
+    
+    <link rel="stylesheet" type="text/css" href="#" />
+            
+    <script language="javascript">
+		window.onload = oppstart; 	
+		
+		function oppstart () {
+			document.getElementById("btnStart").onclick = nyside;
+		}
+		
+		function nyside() {
+		
+		var brukernavn = document.getElementById("BN").value;
+		var passord = document.getElementById("PO").value;
+            
+        //Dette sier at du må ha minst 1 bokstav eller tall i tekstboksen
+       if (brukernavn.length < 1 && passord.length < 1) {
+			window.alert("Du har glemt brukernavn og passord")
+		}
+		//Denne forklarer at det mangler tall eller bokstaver i tekstboksen
+		else if (brukernavn.length <= 0) {
+			window.alert("Du har glemt brukernavn");
+		}
+        //Denne forklarer at det mangler tall eller bokstaver i tekstboksen
+		else if (passord.length <= 0) {
+			window.alert("Du har glemt passord");
+		}
+        //Denne sier at alt er OK og sender deg videre.
+		else if (brukernavn.length > 0 && passord.length > 0) {
+			window.alert("Takk for registreringen")
+		}
+		
+		
+		}     
+    </script>  
+</head>
+<body>
+    <h1>
+        Login 
+    </h1>
+    <form name="login">
+        Brukernavn <input id="BN" type="text" /> <br />
+        Passord <input id="PO" type="password" /> <br />
+        <br />
+        <button id="btnStart" type="button">Registrere deg</button>
+    </form>    
+</body>
+</html>
