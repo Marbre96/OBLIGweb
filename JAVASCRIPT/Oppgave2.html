@@ -1,0 +1,55 @@
+<DOCTYPE html!>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Oppgave2</title>
+	<script>
+	
+		window.onload = oppstart; 	
+		
+		
+		function oppstart () {
+			document.getElementById("btnStart").onclick = nyside;
+		}
+		
+		function nyside() {
+		
+		var brukernavn = document.getElementById("BN").value;
+		var passord = document.getElementById("PO").value;
+		
+		
+		
+		if (brukernavn.length <= 0 && passord.length > 0) {
+			window.alert("Du har glemt brukernavn");
+		}
+		
+		if (passord.length <= 0 && brukernavn.length > 0) {
+			window.alert("Du har glemt passord");
+		}	
+		//Sjekker at du har skrevet riktig passord i begge boksene
+		if (PO.value !== BPO.value) {
+			window.alert("Passordene matcher ikke");
+		}
+		
+		//Gir tilbake melding på om man har glemt brukernavn og passord
+		if (brukernavn.length <= 0 && passord.length <= 0) {
+			window.alert("Du har glemt brukernavn og passord");
+		}	
+		//Ser om passordet er på minst 5 tegn(Den dukker og opp dersom man har glemte både passord og brukernavn)
+		if (passord.length < 5) {
+			window.alert("Passordet må minst være på 5 tegn");
+		}
+		
+		if (brukernavn.length > 0 && passord.length > 0 && PO.value === BPO.value && passord.length > 5) {
+			window.alert("Takk for registreringen");}
+		
+		} 
+	</script>
+</head>
+<body>
+Brukernavn <input type="text" id="BN" /> <br></br>
+Passord <input type="password" id="PO" /> <br></br>
+Passordbekreftelse <input type ="password" id="BPO" /> <br></br>
+<button id="btnStart" type="button">Registrer</button>  
+</body>
+</html>

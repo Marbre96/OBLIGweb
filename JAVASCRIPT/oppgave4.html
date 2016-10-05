@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>oppgave 4</title>
+    <meta charset="utf-8" />
+    
+    <script>
+	       window.onload = oppstart;
+                function oppstart() {
+                    var tid = new Date();
+				    var timer = tid.getHours();
+				
+				//Dette er en variabel som kan teste koden
+				    var timer = 22;
+					
+					if (timer >= 6 && timer <=11) {
+                        document.getElementById("foor").innerHTML = "God Morgen";
+                    }
+                    /*else{console.log("hei");}*/
+                    
+					if (timer >= 12 && timer <= 17) {
+						document.getElementById("etter").innerHTML = "God Ettermidag";
+                    }
+                    
+					if (timer >= 18 && timer <= 23) {
+						document.getElementById("ut").innerHTML = "God Kveld";
+                    }
+                    
+					if (timer >= 24 || timer <=5) {
+						document.getElementById("natten").innerHTML = "God Natt";
+						}
+                }
+    </script>
+</head>
+		
+<body>
+
+    <p ID="foor"></p>
+    <p ID="etter"></p>
+    <p ID="ut"></p>
+    <p ID="natten"></p>
+
+</body>	
+</html>
+

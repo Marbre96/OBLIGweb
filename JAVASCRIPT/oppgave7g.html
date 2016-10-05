@@ -1,0 +1,31 @@
+<!doctype HTML>
+<head>
+	<title>oppgave7g</title>
+	<meta charset="utf-8" />
+	<script>
+	
+		window.onload = oppstart;
+		
+		function oppstart() {
+			
+			var a = 0;
+            
+            for(var a = 0; a <= 100; a++){
+                
+                if(a % 2 != 0){
+                    document.getElementById("utskrift").innerHTML += "-" + a + ", ";
+                }
+                else {
+                    document.getElementById("utskrift").innerHTML += a + ", ";
+                }
+            }
+        }
+                
+	
+	</script>
+
+
+</head>
+<body>
+	<p id="utskrift"></p>
+</body>

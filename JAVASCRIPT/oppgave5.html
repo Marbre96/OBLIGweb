@@ -1,0 +1,71 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>oppgave 5</title>
+
+</head>
+<body>
+    <div> 
+        <p>Navn:</p>
+        <input tye="text" id="navn" />
+        
+        <p>Kjønn:</p>  
+        <select id="kjonn">
+            <option value="gutt">  Gutt </option>
+            <option value="jente"> Jente </option>
+        </select>
+
+             <p>Alder:</p>  
+             <input type="number" id="aar" />
+             <br />
+
+             <p>Høyde: </p>
+             <input type="number" id="hoyde" />
+ 
+        <br />
+ 
+             <button id="spaa"> Få din spådomm </button>
+             <p id="svar">   </p>
+        </div>
+    <script>
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("spaa").onclick = beregn
+        }
+    
+        function beregn() {
+            var navn = document.getElementById("navn").value;
+            var navntall = navn.length;
+            var kjonn = document.getElementById("kjonn").value;
+            var aar = parseInt(document.getElementById("aar").value);
+            var hoyde = parseInt(document.getElementById("hoyde").value);
+            var svar = document.getElementById("svar") 
+            
+            
+            if ( kjonn === "gutt") {
+                var gresult = (navntall * aar) - hoyde;
+                if (gresult % 2 === 0) {
+                svar.innerHTML = "Det vil gå deg godt her i verden... For at spådommen skal gå i oppfyllelse, må du betale inn 100 kr til følgende kontonummer: 1234.12.12345" ;
+                
+            } else {
+                svar.innerHTML= "Stakkars deg! Alt kommer til å gå deg galt...For at spådommen ikke skal gå i oppfyllelse, må du betale inn 100 kr til følgende kontonummer: 1234.12.12345";
+            }
+            }
+            
+            else{
+                
+            var jresult = ( aar * hoyde) -3;
+            if (jresult % 2 === 0) {
+                svar.innerHTML = "Det vil gå deg godt her i verden... For at spådommen skal gå i oppfyllelse, må du betale inn 100 kr til følgende kontonummer: 1234.12.12345"
+            } else {
+                svar.innerHTML = "Stakkars deg! Alt kommer til å gå deg galt...For at spådommen ikke skal gå i oppfyllelse, må du betale inn 100 kr til følgende kontonummer: 1234.12.12345";
+            }
+                }
+            
+        }
+            
+    </script>
+</body>
+</html>

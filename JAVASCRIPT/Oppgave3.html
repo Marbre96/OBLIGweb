@@ -1,0 +1,60 @@
+<DOCTYPE html!>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Oppgave3</title>
+	<script>
+	
+		window.onload = oppstart; 	
+		
+		
+		function oppstart () {
+			document.getElementById("btnStart").onclick = villesider;
+		
+		  function villesider() {
+		
+            var brukernavn = document.getElementById("BN").value;
+            var passord = document.getElementById("PO").value;
+            var alder = document.getElementById("ALDER").value; 
+
+            
+            if (brukernavn.length <= 0 && passord.length > 0) {
+                window.alert("Du har glemt brukernavn");
+            }
+            
+            if (passord.length <= 0 && brukernavn.length > 0) {
+                window.alert("Du har glemt passord");
+            }	
+            //Sjekker at du har skrevet riktig passord i begge boksene
+            if (PO.value !== BPO.value) {
+                window.alert("Passordene matcher ikke");
+            }
+            //Sjekker om du er 18 år eller over
+            if (alder < 18){
+                window.alert("Du er ikke gammel nok")
+            }
+
+            //Sjekker om du har glemt brukernavn og passord
+            if (brukernavn.length <= 0 && passord.length <= 0) {
+                window.alert("Du har glemt brukernavn og passord");
+            }	
+            
+            if (passord.length < 6) {
+                window.alert("Passordet må minst være på 5 tegn");
+            }
+            
+            else if (brukernavn.length > 0 && passord.length > 0 && PO.value === BPO.value && passord.length > 5 && alder >= 18) {
+                window.alert("Takk for registreringen");
+            }
+          }
+        }
+	</script>
+</head>
+<body>
+Brukernavn <input type="text" id="BN" /> <br></br>
+Passord <input type="password" id="PO" /> <br></br>
+Passordbekreftelse <input type ="password" id="BPO" /> <br></br>
+Alder <input type ="text" id="ALDER" /> <br></br>
+<button id="btnStart" type="button">Registrer</button>  
+</body>
+</html>
