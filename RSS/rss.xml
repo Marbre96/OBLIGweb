@@ -2,18 +2,15 @@
 <rss version="2.0">
 
         <channel>
-          <title> test </title>
-          <link> test </link>
-          <description> test </description>
           <item>
             <title>tek.no</title>
             <link>http://www.tek.no/</link>
             <description>Teknologi nyheter</description>
           </item>
           <item>
-            <title>XML Tutorial</title>
-            <link>http://www.w3schools.com/xml</link>
-            <description>New XML tutorial on W3Schools</description>
+            <title>ITAvisen</title>
+            <link>http://itavisen.no/</link>
+            <description>IT nyheter</description>
           </item>
         </channel>
 
