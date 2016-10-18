@@ -119,6 +119,13 @@ p.sjokko1 {
 	margin-left:10em;
 	margin-right: 10em;
 }
+
+ul.sjokko {
+	color:white;
+    float: left;
+    clear: right;
+	
+}
 .footer {
     clear:both;
     bottom: 0;
