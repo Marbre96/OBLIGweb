@@ -109,6 +109,15 @@ p.sjokko {
     color:white;
     float: right;
     clear: right;
+	margin-left:10em;
+	margin-right: 10em;
+}
+p.sjokko1 {
+	float: left;
+	color: white;
+	clear: right;
+	margin-left:10em;
+	margin-right: 10em;
 }
 ul.sjokko {
 	color:white;
