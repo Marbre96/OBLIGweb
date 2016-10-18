@@ -110,12 +110,10 @@ p.sjokko {
     float: right;
     clear: right;
 }
-
 ul.sjokko {
 	color:white;
     float: left;
     clear: right;
-	
 }
 .footer {
     clear:both;
