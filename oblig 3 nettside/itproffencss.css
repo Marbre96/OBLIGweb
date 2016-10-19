@@ -119,16 +119,20 @@ p.sjokko1 {
 	margin-left:10em;
 	margin-right: 10em;
 }
-ul.sjokko {
-	color:white;
+ul.sjokko {'
+    text-align: center;
+    color:white;
     float: left;
-    clear: right;
+    clear: left;
+	margin-left:10em;
+	margin-right: 10em;
 }
 .footer {
-    clear:both;
+    position: absolute;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    height: 60px;
+    left: 0;
+    padding: 1rem;
     border-top: 3px solid;
     border-color: #4a39ae
 }
