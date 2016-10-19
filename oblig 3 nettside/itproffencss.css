@@ -1,6 +1,7 @@
 body {
-  padding-top: 50px;
-  background-image: url(Footer_Chalkboard_Background.jpg);
+    padding-top: 50px;
+    padding-bottom:60px;
+    background-image: url(Footer_Chalkboard_Background.jpg);
  
 }
 
@@ -127,12 +128,30 @@ ul.sjokko {
 	margin-left:10em;
 	margin-right: 10em;
 }
-.footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;  
+}
+.footer.ikkehjem {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px; 
+    border-top: 3px solid;
+    border-color: #4a39ae
+}
+.footer.hjem {
+    bottom:0;
+    width:100%;
+    height:60px; 
     border-top: 3px solid;
     border-color: #4a39ae
 }
